@@ -1,0 +1,21 @@
+{
+  "name": "AlphaX Bot",
+  "description": "WhatsApp Bot",
+  "repository": "https://github.com/ashennethsara/alphax.git",
+  "logo": "https://zenzapis.xyz/images/icon.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp self", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
